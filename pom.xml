@@ -1,0 +1,124 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>DemoGitRepo</groupId>
+  <artifactId>DemoGitRepo</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>DemoGitRepo</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>						
+			<dependency>
+	            <groupId>io.appium</groupId>
+	            <artifactId>java-client</artifactId>
+	            <version>6.0.0-BETA4</version>
+	        </dependency>					  
+		
+			<dependency>
+				<groupId>org.testng</groupId>
+				<artifactId>testng</artifactId>
+				<version>6.14.2</version>
+	 			<scope>compile</scope>
+			</dependency>
+			
+			<dependency>
+			    <groupId>log4j</groupId>
+			    <artifactId>log4j</artifactId>
+			    <version>1.2.17</version>
+			</dependency>
+			
+			<!-- Cucumber Dependencies -->
+			 <dependency>
+   				<groupId>info.cukes</groupId>
+   				<artifactId>cucumber-java</artifactId>
+    			<version>1.2.5</version>
+			</dependency>			
+			   
+			<dependency>
+	            <groupId>info.cukes</groupId>
+	            <artifactId>cucumber-testng</artifactId>
+	            <version>1.2.5</version>
+	            <scope>test</scope>
+	            <exclusions>
+	                <exclusion>
+	                    <groupId>junit</groupId>
+	                    <artifactId>junit</artifactId>
+	                </exclusion>
+	            </exclusions>
+	        </dependency>	
+	        
+			<dependency>
+			    <groupId>io.cucumber</groupId>
+			    <artifactId>cucumber-core</artifactId>
+			    <version>2.4.0</version>
+			</dependency>
+	
+			<!-- Allure Reporting API Dependency -->
+			 <dependency>
+	          	<groupId>io.qameta.allure</groupId>
+			    <artifactId>allure-cucumber-jvm</artifactId>
+			    <version>2.10.0</version>
+	        </dependency>
+	     	        
+			<!-- Galen Dependency -->
+	 		<dependency>
+		        <groupId>com.galenframework</groupId>
+		        <artifactId>galen-java-support</artifactId>
+		        <version>2.3.7</version>
+		    </dependency>
+					
+			<!-- Rest Assured Dependencies -->
+			<dependency>
+				<groupId>io.rest-assured</groupId>            
+				<artifactId>rest-assured</artifactId>  
+				<version>3.0.2</version> 
+				<scope>test</scope>
+			</dependency> 
+				
+			<dependency>   
+				<groupId>org.json</groupId>
+				<artifactId>json</artifactId>
+				<version>20180813</version>
+			</dependency>
+			 
+			<dependency>
+				<groupId>com.googlecode.json-simple</groupId> 
+				<artifactId>json-simple</artifactId>
+				<version>1.1.1</version>
+			</dependency>   
+		  	
+			<!-- TTS Dependencies -->
+			<dependency>
+	            <groupId>in.co.gauravtiwari.voice</groupId>
+	            <artifactId>VoiceAutomationClient</artifactId>
+	            <version>1.0.0</version>
+	        </dependency>
+	              
+	        <dependency>
+	           <groupId>net.sf.sociaal</groupId>
+	           <artifactId>freetts</artifactId>
+	           <version>1.2.2</version>
+	       </dependency>
+            
+	        <!-- Applitools Dependency -->      
+	      	<dependency>
+			    <groupId>com.applitools</groupId>
+			    <artifactId>eyes-selenium-java3-jersey1x</artifactId>
+			    <version>3.35.3</version>
+			</dependency>
+					
+			<!-- SonarQube Scanner Dependency -->
+	        <dependency>
+			    <groupId>org.codehaus.mojo</groupId>
+			    <artifactId>sonar-maven-plugin</artifactId>
+			    <version>3.4.0.905</version>
+			    <type>pom</type>
+			</dependency>					
+		</dependencies>
